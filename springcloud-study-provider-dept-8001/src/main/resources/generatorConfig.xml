@@ -46,8 +46,8 @@
                          targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/resources/">
         </sqlMapGenerator>
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.andlinks.dept8001.dao"
-                             targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/java/com/andlinks/springcloud/dao">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.andlinks.springcloud.dao"
+                             targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/java">
         </javaClientGenerator>
 
 

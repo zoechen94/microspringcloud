@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloud-api" />
         <module name="springcloud-study-provider-dept-8001" />
+        <module name="microservicecloud-consumer-dept-80" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
