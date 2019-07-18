@@ -1,13 +1,38 @@
 package com.andlinks.springcloud.pojo.entity;
 
-public class Dept {
-    private String d;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-    public String getD() {
-        return d;
+@Data
+@Accessors(chain = true)
+public class Dept {
+    private Long deptno;
+
+    private String dname;
+
+    private String dbSource;
+
+    public Long getDeptno() {
+        return deptno;
     }
 
-    public void setD(String d) {
-        this.d = d;
+    public void setDeptno(Long deptno) {
+        this.deptno = deptno;
+    }
+
+    public String getDname() {
+        return dname;
+    }
+
+    public void setDname(String dname) {
+        this.dname = dname;
+    }
+
+    public String getDbSource() {
+        return dbSource;
+    }
+
+    public void setDbSource(String dbSource) {
+        this.dbSource = dbSource;
     }
 }
