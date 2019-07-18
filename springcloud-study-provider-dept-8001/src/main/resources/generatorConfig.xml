@@ -39,20 +39,20 @@
         -->
         <!--生成Model类存放位置-->
         <javaModelGenerator targetPackage="com.andlinks.springcloud.pojo.entity"
-                            targetProject="/Users/yalan/Desktop/project/microspringcloud/microservicecloud-api/src/main/java">
+                            targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/java">
         </javaModelGenerator>
         <!--生成映射文件存放位置-->
         <sqlMapGenerator targetPackage="mapper"
-                         targetProject="/Users/yalan/Desktop/project/microspringcloud/springcloud-study-provider-dept-8001/src/main/resources">
+                         targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/resources/">
         </sqlMapGenerator>
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.andlinks.dept8001.dao"
-                             targetProject="/Users/yalan/Desktop/project/microspringcloud/springcloud-study-provider-dept-8001/src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.andlinks.springcloud.dao"
+                             targetProject="/Users/yalan/Desktop/andlinks/springcloud/microservicecloud-api/src/main/java">
         </javaClientGenerator>
 
 
         <!-- 需要生成的表名以及实体类命名 -->
-        <table tableName="ve" domainObjectName="Dept"
+        <table tableName="dept" domainObjectName="Dept"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
