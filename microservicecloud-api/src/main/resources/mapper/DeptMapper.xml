@@ -68,4 +68,10 @@
       db_source = #{dbSource,jdbcType=VARCHAR}
     where deptno = #{deptno,jdbcType=BIGINT}
   </update>
+  <select id="selectById" resultMap="BaseResultMap">
+    select * from dept where deptno=#{id}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from dept
+  </select>
 </mapper>
