@@ -5,6 +5,8 @@ import com.andlinks.springcloud.pojo.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TestServiceImpl implements Test {
     @Autowired
@@ -14,5 +16,15 @@ public class TestServiceImpl implements Test {
         Dept dept1=new Dept();
          dept1.setDname("我是");
          deptMapper.insert(dept1);
+    }
+
+    @Override
+    public Dept getOneById(Long id) {
+        return deptMapper.selectById(id);
+    }
+
+    @Override
+    public List<Dept> listAll() {
+        return deptMapper.selectAll();
     }
 }

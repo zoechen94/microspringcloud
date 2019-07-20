@@ -2,6 +2,8 @@ package com.andlinks.springcloud.dao;
 
 import com.andlinks.springcloud.pojo.entity.Dept;
 
+import java.util.List;
+
 public interface DeptMapper {
     int deleteByPrimaryKey(Long deptno);
 
@@ -14,4 +16,8 @@ public interface DeptMapper {
     int updateByPrimaryKeySelective(Dept record);
 
     int updateByPrimaryKey(Dept record);
+
+    Dept selectById(Long id);
+
+    List<Dept> selectAll();
 }
