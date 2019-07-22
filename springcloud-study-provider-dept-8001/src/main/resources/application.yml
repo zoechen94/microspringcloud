@@ -7,7 +7,7 @@ server:
 #数据库信息配置
 spring:
   application:
-    name: study-springcloud-dept  #对外暴露应用名称
+    name: study-springcloud-dept  #对外暴露应用名称(在eureka里的应用服务名字)
   datasource:
     url: jdbc:mysql://localhost:3306/clouddb01?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false
     username: root
@@ -41,5 +41,22 @@ mybatis:
     map-underscore-to-camel-case: true #开启驼峰命名
     cache-enabled: true #开启二级缓存
 
+#eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7222.com:7222/eureka,http://eureka7333.com:7333/eureka
+  instance:
+    instance-id: microservicecloud-dept8001  #自定义服务名称信息
+    prefer-ip-address: true  # 访问路径可以显示ip
+
+
 mysql:
   location: /Users/yalan/.m2/repository/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar
+
+
+info:
+  app.name: service-cloud
+  companyName: andlinks
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
