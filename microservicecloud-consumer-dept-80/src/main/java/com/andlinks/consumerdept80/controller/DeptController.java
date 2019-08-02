@@ -14,7 +14,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/dept")
 public class DeptController {
-    private static final String REST_URL_PREFIX="http://localhost:8001/";
+//    private static final String REST_URL_PREFIX="http://localhost:8001/";
+
+    //服务提供者
+    private static final String REST_URL_PREFIX="http://STUDY-SPRINGCLOUD-DEPT";
     /**
      * 提供了多种便捷访问Http服务的方法
      * url
